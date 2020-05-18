@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebStudio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header>
@@ -11,17 +14,17 @@
      <a href="/">
        <img src="./img/WebStudio.jpg" alt="">
      </a>
-     <ul>
-       <li> <a href="/">Студия</a></li>
-       <li> <a href="/">Портфолио</a></li>
-       <li> <a href="/">Контакты</a></li>
+     <ul class="header">
+       <li class="studia"> <a class="title-a-blue" href="/">Студия</a></li>
+       <li class="portfolio-contacts"> <a href="/" title="Портфолио">Портфолио</a></li>
+       <li class="portfolio-contacts"> <a href="/" title="Контакты">Контакты</a></li>
      </ul>
      <ul>
        <li> 
-        <a href="/">info@devstudio.com</a>
+        <a class="title-a-blue" href="/">info@devstudio.com</a>
        </li>
        <li>
-        <a href="/">+38 096 111 11 11</a>
+        <a class="number" href="/">+38 096 111 11 11</a>
        </li>
      </ul>
    </nav>
@@ -31,33 +34,33 @@
    <div>
     <section>
       <h1>эффективные решения <br> для вашегоx бизнеса</h1>
-      <a href="/">Заказать услугу</a>
+      <a class="active-order" href="/">Заказать услугу</a>
     </section> 
    </div>  
   </main>
   <!--Наши преимущества-->
-  <section>
-      <ul>
+  <section class="advantes">
+      <ul class="advantes-list">
       <li>
-        <h3>Внимание к деталям</h3>
+        <h3 class="advantes-list-titale"> Внимание к деталям</h3>
         <p>
           Идейные соображения, а также начало повседневной работы по формированию позиции.
         </p>
       </li>
       <li>
-        <h3>Пунктуальность</h3>
+        <h3 class="advantes-list-titale">Пунктуальность</h3>
         <p>
           Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
         </p>
       </li>
       <li>
-        <h3>Планирование</h3>
+        <h3 class="advantes-list-titale">Планирование</h3>
         <p>
           Значимость этих проблем настолько очевидна, что реализация плановых заданий.
         </p>
       </li>
       <li>
-        <h3>Современные технологии</h3>
+        <h3 class="advantes-list-titale">Современные технологии</h3>
         <p>
           Значимость этих проблем настолько очевидна, что реализация плановых заданий.
         </p>
@@ -70,26 +73,26 @@
     <ul>
       <li>
         <img src="./img/Desktop.jpg" alt="">
-        <h3>Десктопные приложения</h3>
+       <h3 class="about-us-list">Десктопные приложения</h3>
       </li>
       <li>
         <img src="./img/Mobail.jpg" alt="">
-        <h3>Мобильные приложения</h3>
+        <h3 class="about-us-list">Мобильные приложения</h3>
       </li>
       <li>
         <img src="./img/Disain.jpg" alt="">
-        <h3>Дизайнерские решения</h3>
+        <h3 class="about-us-list">Дизайнерские решения</h3>
       </li>
     </ul>
   </section>
   <!--Наша команда-->
-  <section>
+  <section class="our-team">
    <h2>Наша команда</h2>
    <ul>
-     <li>
+     <li class="our-team-list">
        <img src="./img/JohnSmith.jpg" alt="">
-       <h3>John Smith</h3>
-       Product Designer
+       <h3 class="our-team-members">John Smith</h3>
+         <p>Product Designer</p> 
         <ul>
           <li>
             <a href="">
@@ -113,10 +116,10 @@
           </li>
         </ul>
      </li>
-     <li>
+     <li class="our-team-list">
        <img src="./img/MartaStewart.jpg" alt="">
-       <h3>Marta Stewart</h3>
-       Frontend Developer
+       <h3 class="our-team-members">Marta Stewart</h3>
+         <p>Frontend Developer</p>  
        <ul>
         <li>
           <a href="">
@@ -140,10 +143,10 @@
         </li>
       </ul>
      </li>
-     <li>
+     <li class="our-team-list">
        <img src="./img/RobertJakis.jpg" alt="">
-       <h3>Robert Jakis</h3>
-       Marketing
+       <h3 class="our-team-members">Robert Jakis</h3>
+        <p>Marketing</p> 
       <ul>
         <li>
           <a href="">
@@ -167,10 +170,10 @@
         </li>
       </ul>
      </li>
-     <li>
+     <li class="our-team-list">
       <img src="./img/MartinDoe.jpg" alt="">
-      <h3>Martin Doe</h3>
-      UI Designer
+      <h3 class="our-team-members">Martin Doe</h3>
+       <p>UI Designer</p> 
      <ul>
        <li>
          <a href="">
