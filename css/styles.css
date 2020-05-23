@@ -1,9 +1,15 @@
+:root {
+--primary-butten-bg-color:  #2196F3;
+--secondary-text-colo: #FFFFFF;
+--primery-text-color: #757575;
+}
+
 body {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     background-color: #FFFFFF;
-    color: #757575;
+    color: var(--primery-text-color);
     font-size: 14px;
     letter-spacing: 0.03em;
 }
@@ -30,8 +36,13 @@ header {
     color: #2196F3;
 }
 
+.title-a-blue:hover
+.title-a-blue:focus{
+    color: var(--primary-butten-bg-color);
+}
+
 .number {
-   color: #757575; 
+   color: var(--primery-text-color); 
 }
 
 .headline-studio {
@@ -42,8 +53,7 @@ header {
  text-align: center;
  letter-spacing: 0.06em;
  text-transform: uppercase;
-
-color: #FFFFFF;
+ color: var(--secondary-text-colo);
 }
 
 .active-order {
@@ -54,8 +64,7 @@ color: #FFFFFF;
  align-items: center;
  letter-spacing: 0.06em;
  text-align: center;
-
- color: #FFFFFF;
+ color: var(--secondary-text-colo);
 }
 
 .advantes-list-titale {
@@ -68,7 +77,7 @@ color: #FFFFFF;
  line-height: 1.71;
 }
 
-h2 {
+.h2-studio{
  font-weight: 700;
  font-size: 36px;
  line-height: 1.17;
@@ -80,7 +89,7 @@ h2 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--secondary-text-colo);
 }
 
 .our-team-members {
@@ -139,17 +148,12 @@ footer {
 }
 
 .logo-studio {
-    color:#FFFFFF;
-
-.headline-filters: not(:focus):not(:active) {
-   color: #000000;
+    color: var(--secondary-text-colo); 
 }
-.filters > li{
-    font-weight: 500;
+
+.filters-list > li {
     line-height: 1.63;
-    text-align: center;
 }
-
 .filter-list-all {
     color: #FFFFFF;
 }
@@ -157,6 +161,56 @@ footer {
 .filters-list-rest {
     color: #212121;
 }
+
+.filters-list {
+    font-weight: 500;
+    line-height: 1.63;
+    text-align: center;
+
+}
+
+.headline-filters:not(:focus):not(:active) {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.h2-portfolio {
+    line-height: 2;
+    color: #212121;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
 .our-works-discribe {
     line-height: 1.88;
+}
+
+.button {
+   background-color: var(--primary-butten-bg-color); 
+   color: var(--secondary-text-colo);
+}
+
+.advantes-list-attantion:hover
+.advantes-list-attantion:focus{
+    color: var(--secondary-text-colo);
+}
+
+.networks:hover
+.networks:focus {
+     background-color: var(--primary-butten-bg-color);
+}
+
+.button-secondary {
+    background: #F5F4FA;
+    border-radius: 4px;
 }
